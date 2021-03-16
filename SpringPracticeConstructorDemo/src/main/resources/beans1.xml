@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+   <!-- bean definition & AOP specific configuration -->
+<bean id="name1" class="com.app.springDemo.Employee11">
+<constructor-arg name="name" value="neelima"/>
+<constructor-arg name="salary" value="3000.0"/>
+<constructor-arg name="city" value="hyderabad"/>
+</bean>
+
+<bean id="name2" class="com.app.springDemo.Employee11">
+<constructor-arg index="0" value="neelima"/>
+<constructor-arg index="1" value="3000.0"/>
+<constructor-arg index="2" value="hyderabad"/>
+</bean>
+<bean id="name3" class="com.app.springDemo.Employee11">
+<constructor-arg name="name" value="neelima"/>
+<constructor-arg name="salary" value="3000.0"/>
+<constructor-arg name="city" value="hyderabad"/>
+</bean>
+<bean id="name5" class="com.app.springDemo.Employee11">
+<constructor-arg value="neelima"/>
+<constructor-arg value="3000.0"/>
+<constructor-arg value="hyderabad"/>
+</bean>
+<bean id="name4" class="com.app.springDemo.Department">
+<constructor-arg name="dept1" value="developer"/>
+<constructor-arg name="dept2" value="teacher"/>
+<constructor-arg name="dept3" value="conductor"/>
+</bean>
+
+</beans>
